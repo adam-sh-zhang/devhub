@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="fragments/layout::layout(~{::#content},#{welcome})">
+
+<div id="content" class="container">
+    <table class="table">
+        <caption>基本的表格布局</caption>
+        <thead>
+        <tr>
+            <th>名称</th>
+            <th>城市</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="person :${persons}">
+            <td th:text="${person.getId()}">Tanmay</td>
+            <td th:text="${person.getUserName()}">Tanmay</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</html>

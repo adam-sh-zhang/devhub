@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="fragments/layout::layout(~{::#content},#{welcome})">
+<div id="content" class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-6" style="text-align:right">现在的unix时间戳是：</div>
+            <div class="col-md-6"><input type="text" id="currentUnix"/></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4" style="text-align:right">unix时间戳</div>
+            <input class="col-md-2" type="text"/>
+            <div class="col-md-2">
+                <button type="button" class="col-md-12 btn btn-default">转换成北京时间</button>
+            </div>
+            <input class="col-md-2" type="text"/>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4" style="text-align:right">北京时间（年/月/日 时:分:秒）</div>
+            <input class="col-md-2" type="text"/>
+            <div class="col-md-2"><button class="col-md-12 btn btn-default">转换成Unix时间戳：</button></div>
+            <input class="col-md-2" type="text"/>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="text-align:right">北京时间</div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="col-md-1" type="text"/><label class="col-md-1">年</label>
+                    <input class="col-md-1" type="text"/><label class="col-md-1">月</label>
+                    <input class="col-md-1" type="text"/><label class="col-md-1">日</label>
+                    <input class="col-md-1" type="text"/><label class="col-md-1">时</label>
+                    <input class="col-md-1" type="text"/><label class="col-md-1">分</label>
+                    <input class="col-md-1" type="text"/><label class="col-md-1">秒</label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-default">转换成北京时间：</button>
+            </div>
+            <div class="col-md-2"><input type="text"/></div>
+        </div>
+    </div>
+</div>
+</html>
